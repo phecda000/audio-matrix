@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-matrix"
+version = "1.4.0"
+description = "Standalone desktop audio mixer, application router, and left/right matrix"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "phecda000" }]
+keywords = ["linux", "pulseaudio", "audio", "mixer", "routing"]
+classifiers = [
+    "Environment :: X11 Applications :: GTK",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.urls]
+Homepage = "https://github.com/phecda000/audio-matrix"
+Issues = "https://github.com/phecda000/audio-matrix/issues"
+
+[project.gui-scripts]
+audio-matrix = "audio_matrix.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

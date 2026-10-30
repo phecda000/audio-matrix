@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=音频矩阵
+Comment=麦克风监听、应用分流与左右声道矩阵
+Exec=@EXEC@
+Icon=audio-matrix
+Terminal=false
+Categories=AudioVideo;Audio;
+StartupNotify=true
